@@ -1,0 +1,137 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fa-shopping-cart{
+    color: #14597f;
+}
+
+.shopping-cart {
+  position: relative;
+  text-decoration: none;
+}
+
+.count {
+  position: absolute;
+  bottom: -10px; /* Position at the bottom */
+  right: -10px;
+  background-color: #d9534f; /* Red color for the badge */
+  color: white;
+  border-radius: 45%; /* Makes the background a circle */
+  padding: 1 6px; /* Top/bottom padding 0, left/right padding 5px */
+  font-size: 0.75em; /* Adjust the font size as needed */
+  min-width: 20px; /* Ensures circle shape */
+  height: 20px; /* Height of the circle */
+  text-align: center; /* Centers text horizontally */
+  line-height: 20px; /* Centers text vertically */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow effect */
+}
+
+
+
+
+
+
+/* Styling the navbar */
+.navbar {
+  background-color: #14597f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+  border-bottom: 1px solid #0b2d3d;
+}
+
+.active{
+    background-color: #1fb5e9;
+}
+.adjust{
+    margin-top: 4%;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Menu navigation */
+.menu {
+  display: flex;
+  max-width: 1200px;
+}
+
+/* Menu items */
+.menu li {
+  padding: 0 5px; 
+}
+
+.menu a {
+  text-decoration: none;
+  color: white; 
+  font-weight: bold; 
+  
+}
+
+.menu a:hover {
+  background-color: #0056b3; 
+  border-radius: 5px; 
+}
+
+.sticky-footer {
+    width: 100%;
+    background-color: #eeeeee; 
+    color: black;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    padding: 10px 0; 
+    height: 70px;
+    padding: 10px 0;
+}
+
+/* .footer,
+.push {
+  height: 50px;
+} */
+
+
+.mainContent{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: auto min-content;
+  gap: 20px;
+  min-height: 100%;
+  margin: 0 auto -40px;
+}
+
+.right-aligned-img {
+    justify-self: end;
+}
+
+/* Stylisation du bouton */
+.btn {
+    display: inline-block;
+    background-color: #14597f;
+    color: white; 
+    text-decoration: none;
+    padding: 10px 20px; 
+    border: 1px solid #0b2d3d;
+    border-radius: 4px; 
+    transition: background-color 0.2s ease-out; 
+}
+
+.btn:hover {
+    background-color: #1fb5e9;
+    text-decoration: none; 
+}
