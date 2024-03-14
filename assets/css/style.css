@@ -4,11 +4,6 @@ html, body{
 
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .fa-shopping-cart{
     color: #14597f;
@@ -21,7 +16,7 @@ ul {
 
 .count {
   position: absolute;
-  bottom: -10px; /* Position at the bottom */
+  bottom: -14px; /* Position at the bottom */
   right: -10px;
   background-color: #d9534f; /* Red color for the badge */
   color: white;
@@ -54,10 +49,9 @@ ul {
 }
 
 .active{
-    background-color: #1fb5e9;
-}
-.adjust{
-    margin-top: 4%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #1fb5e9;
 }
 
 /* Logo */
@@ -67,8 +61,11 @@ ul {
 
 /* Menu navigation */
 .menu {
-  display: flex;
+  display: inline-flex;
   max-width: 1200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Menu items */
@@ -82,10 +79,13 @@ ul {
   font-weight: bold; 
   
 }
-
-.menu a:hover {
+.itemhover{
+  padding: 8px;
+}
+.itemhover:hover {
   background-color: #0056b3; 
   border-radius: 5px; 
+
 }
 
 .sticky-footer {
@@ -99,10 +99,6 @@ ul {
     padding: 10px 0;
 }
 
-/* .footer,
-.push {
-  height: 50px;
-} */
 
 
 .mainContent{
@@ -111,7 +107,7 @@ ul {
   display: grid;
   grid-template-columns: auto min-content;
   gap: 20px;
-  min-height: 100%;
+  min-height: 83.2%;
   margin: 0 auto -40px;
 }
 
@@ -128,10 +124,158 @@ ul {
     padding: 10px 20px; 
     border: 1px solid #0b2d3d;
     border-radius: 4px; 
-    transition: background-color 0.2s ease-out; 
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: #1fb5e9;
     text-decoration: none; 
+}
+
+/* products.html */
+
+.mainContentProd{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+
+/* Selected button style */
+.selected {
+  background-color: #ddf2fb !important;
+}
+
+.lateralbuttons {
+  background-color: white;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding: 10px 24px; /* Some padding */
+  width: 80%; /* Set a width if needed */
+  text-align: left;
+  cursor: pointer;
+}
+
+.lateralbuttons:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.lateralbuttons:hover {
+  background-color: #f3f3f3;
+  transition: background-color 0.2s ease-out;
+}
+
+#products-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+  gap: 10px; /* This adds space between your grid items */
+  padding-bottom: 50px;
+}
+
+.numberprod{
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 90% 10%; /* Creates three columns of equal width */
+}
+
+.item{
+  padding-left: 2%;
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.item:hover{
+  background-color: #f3f3f3;
+  transition: background-color 0.2s ease-out;
+}
+
+.img{
+  width: 100%;
+}
+
+.textright{
+  font-weight: 530;
+  padding-right: 3%;
+  text-align: right;
+}
+
+/* product page */
+
+.mainContentUniqueProd{
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 75.4%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 50%; /* Ajuste les colonnes pour qu'elles prennent 50% de la largeur du conteneur */
+}
+
+.prodimg{
+  max-width: 100%;
+  height: auto;
+}
+
+.form-control {
+  width: 10%;
+  border: 1px solid #999999;
+  
+}
+
+.product-form{
+  margin-left: auto; /* Cela pousse le formulaire vers la droite */
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border-radius: 4px;
+}
+
+.price-form-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.borderbottomsection{
+  border-bottom: 1.3px dashed #999999;
+}
+
+/* contact */
+
+#contact-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+  gap: 10px; /* This adds space between your grid items */
+  padding-bottom: 50px;
+}
+
+.sectioninline{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+#contact-list{
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding-top: 1%;
+}
+
+/* confirmation */
+
+.confirmationmain{
+  min-height: 75%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
